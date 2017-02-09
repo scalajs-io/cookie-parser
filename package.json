@@ -1,0 +1,11 @@
+{
+  "name": "cookie-parser-scalajs",
+  "version": "1.4.3",
+  "private": true,
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "source-map": "^0.5.6"
+  }
+}
