@@ -1,21 +1,25 @@
 Cookie-parser API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [cookie-parser](https://www.npmjs.com/package/cookie-parser)
+[cookie-parser](https://www.npmjs.com/package/cookie-parser) - cookie parsing with signatures.
 
-Cookie parsing with signatures.
+### Description
 
-#### Build Dependencies
+Parse Cookie header and populate req.cookies with an object keyed by the cookie names. 
+Optionally you may enable signed cookie support by passing a secret string, which assigns 
+req.secret so it may be used by other middleware.
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+### Build Dependencies
+
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +33,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.JSON
@@ -43,7 +47,7 @@ val results = CookieParser.JSONCookie("foo=bar; equation=E%3Dmc%5E2")
 println(s"cookies => ${JSON.stringify(results.orNull)}")
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
 To add the `CookieParser` binding to your project, add the following to your build.sbt:  
 
