@@ -10,7 +10,6 @@ req.secret so it may be used by other middleware.
 
 ### Build Dependencies
 
-* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
@@ -52,7 +51,7 @@ println(s"cookies => ${JSON.stringify(results.orNull)}")
 To add the `CookieParser` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "cookie-parser" % "1.4.3"
+libraryDependencies += "io.scalajs.npm" %%% "cookie-parser" % "1.4.3-2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
