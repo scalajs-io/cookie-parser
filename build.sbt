@@ -5,8 +5,8 @@ import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "1.4.3-3"
-val scalaJsIOVersion = "0.3.0.7"
+val apiVersion = "1.4.3-4"
+val scalaJsIOVersion = "0.3.0.8"
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs.io/cookie-parser"))
@@ -27,8 +27,8 @@ lazy val root = (project in file(".")).
 	    "org.scala-lang" % "scala-reflect" % scalaJsVersion,
 	    "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
 	    "io.scalajs" %%% "nodejs" % scalaJsIOVersion,
-      "io.scalajs.npm" %%% "cookie" % "0.3.1-3",
-      "io.scalajs.npm" %%% "express" % "4.14.1-3"
+      "io.scalajs.npm" %%% "cookie" % "0.3.1-4",
+      "io.scalajs.npm" %%% "express" % "4.14.1-4"
   ))
 
 /////////////////////////////////////////////////////////////////////////////////
